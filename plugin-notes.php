@@ -4,12 +4,14 @@ Plugin Name: Plugin Notes
 Plugin URI: http://wordpress.org/plugins/plugin-notes/
 Description: Allows you to add notes to plugins. Simple and sweet.
 Author: Mohammad Jangda
-Version: 1.6
+Version: 2.0.0
 Author URI: http://digitalize.ca/
 Contributor: Chris Dillon
 Contributor URI: http://gapcraft.com/
 Contributor: Juliette Reinders Folmer
 Contributor URI: http://adviesenzo.nl/
+Contributor: Alexa
+Contributor URI: https://github.com/aleksioz/
 Text Domain: plugin-notes
 Domain Path: /languages
 
@@ -45,7 +47,7 @@ if( !class_exists('plugin_notes')) {
 
 	class plugin_notes {
 
-		const VERSION = 1.6;
+		const VERSION = 2.0.0;
 
 		var $notes = array();
 		var $notes_option = 'plugin_notes';
