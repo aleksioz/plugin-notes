@@ -47,7 +47,7 @@ if( !class_exists('plugin_notes')) {
 
 	class plugin_notes {
 
-		const VERSION = 2.0.0;
+		const VERSION = 2.0;
 
 		var $notes = array();
 		var $notes_option = 'plugin_notes';
@@ -198,7 +198,7 @@ if( !class_exists('plugin_notes')) {
 		/**
 		 * Outputs pluging note for the specified plugin
 		 */
-		function _add_plugin_note ( $note = null, $plugin_data, $plugin_file, $echo = true ) {
+		function _add_plugin_note ( $note, $plugin_data, $plugin_file, $echo = true ) {
 
 			$plugin_safe_name = $this->_get_plugin_safe_name($plugin_data['Name']);
 			$actions = array();
@@ -258,7 +258,7 @@ if( !class_exists('plugin_notes')) {
 		/**
 		 * Outputs form to add/edit/delete a plugin note
 		 */
-		function _add_plugin_form ( $note = '', $note_color, $plugin_safe_name, $plugin_file, $hidden = true, $echo = true ) {
+		function _add_plugin_form ( $note, $note_color, $plugin_safe_name, $plugin_file, $hidden = true, $echo = true ) {
 			$plugin_form_style = ($hidden) ? 'style="display:none"' : '';
 
 			$new_note_class = '';
